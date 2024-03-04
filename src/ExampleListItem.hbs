@@ -1,0 +1,11 @@
+<div>
+    {{>include "@ui5/webcomponents/src/StandardListItem.hbs"}}
+
+    {{#*inline "listItemContent"}}
+        <div class="ui5-li-text-wrapper">
+            <span part="title" class="ui5-li-title">{{this.text}}</span>
+        </div>
+    {{/inline}}
+
+    <slot></slot>
+</div>
